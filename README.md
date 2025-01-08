@@ -1,9 +1,5 @@
 # Agile Contents Java backend code challenge README
 
-:doctype: book
-:lang: en
-:listing-caption: Listing
-
 ## Code challenge
 
 The purpose of the test is to validate your technical and organizational skills. It’s not a big
