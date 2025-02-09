@@ -1,3 +1,6 @@
+
+# INFO.md - Optimal Virtual Employee - User Management APIs
+
 ## Project URLs for Quick Reference:
 
 - Swagger UI: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
@@ -10,6 +13,7 @@
 ### 1. Get All Users
 - Method: `GET`
 - URL: `/api/users/`
+- Description: Fetches all users from the in-memory data store.
 
 #### Positive Response:
 ```json
@@ -34,9 +38,10 @@
 ### 2. Get User by Username
 - Method: `GET`
 - URL: `/api/users/{username}/`
+- Description: Retrieves user details based on the provided username.
 
-#### Positive Request:
-- Example URL: `/api/users/john123/`
+#### Positive Request Example:
+- URL: `/api/users/john123/`
 
 #### Positive Response:
 ```json
@@ -62,6 +67,7 @@
 - Method: `POST`
 - URL: `/api/users/`
 - Headers: `Content-Type: application/json`
+- Description: Creates a new user in the system.
 
 #### Request Body:
 ```json
@@ -98,6 +104,7 @@
 - Method: `PUT`
 - URL: `/api/users/{username}/`
 - Headers: `Content-Type: application/json`
+- Description: Updates the details of an existing user.
 
 #### Request Body:
 ```json
@@ -132,6 +139,7 @@
 ### 5. Delete a User
 - Method: `DELETE`
 - URL: `/api/users/{username}/`
+- Description: Deletes the user associated with the provided username.
 
 #### Positive Response (User Deleted):
 - Status Code: `204 No Content`
