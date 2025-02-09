@@ -1,6 +1,3 @@
-
-# INFO.md - Optimal Virtual Employee - User Management APIs
-
 ## Project URLs for Quick Reference:
 
 - Swagger UI: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
@@ -8,7 +5,7 @@
 
 ---
 
-## API Endpoints (Sorted)
+## API Endpoints
 
 ### 1. Get All Users
 - Method: `GET`
