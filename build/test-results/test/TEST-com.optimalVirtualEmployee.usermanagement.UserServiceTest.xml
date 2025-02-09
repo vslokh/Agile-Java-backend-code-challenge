@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.optimalVirtualEmployee.usermanagement.UserServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-09T19:32:57" hostname="VINAYAK_PC" time="0.689">
+  <properties/>
+  <testcase name="testGetNonExistingUser()" classname="com.optimalVirtualEmployee.usermanagement.UserServiceTest" time="0.664"/>
+  <testcase name="testUpdateUser()" classname="com.optimalVirtualEmployee.usermanagement.UserServiceTest" time="0.004"/>
+  <testcase name="testGetUserByUsername()" classname="com.optimalVirtualEmployee.usermanagement.UserServiceTest" time="0.004"/>
+  <testcase name="testCreateUser()" classname="com.optimalVirtualEmployee.usermanagement.UserServiceTest" time="0.004"/>
+  <testcase name="testDeleteUser()" classname="com.optimalVirtualEmployee.usermanagement.UserServiceTest" time="0.003"/>
+  <testcase name="testUpdateNonExistingUser()" classname="com.optimalVirtualEmployee.usermanagement.UserServiceTest" time="0.004"/>
+  <system-out><![CDATA[01:02:54.661 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.optimalVirtualEmployee.usermanagement.UserServiceTest]: UserServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:02:54.756 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.optimalVirtualEmployee.usermanagement.UserManagementApplication for test class com.optimalVirtualEmployee.usermanagement.UserServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-02-10T01:02:55.076+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.UserServiceTest       : Starting UserServiceTest using Java 21.0.5 with PID 9572 (started by vinay in C:\Users\vinay\OneDrive\Documents\My Space\Project Workspace\Agile-Java-backend-code-challenge)
+2025-02-10T01:02:55.078+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.UserServiceTest       : No active profile set, falling back to 1 default profile: "default"
+2025-02-10T01:02:57.022+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.UserServiceTest       : Started UserServiceTest in 2.122 seconds (process running for 3.135)
+2025-02-10T01:02:57.689+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Creating new user: User(username=johndoe, name=John Doe, email=john.doe@example.com, gender=Male, picture=http://example.com/picture.jpg)
+2025-02-10T01:02:57.694+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Fetching user with username: unknown
+2025-02-10T01:02:57.706+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Creating new user: User(username=johndoe, name=John Doe, email=john.doe@example.com, gender=Male, picture=http://example.com/picture.jpg)
+2025-02-10T01:02:57.707+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Updating user with username: johndoe
+2025-02-10T01:02:57.707+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Updated user details: User(username=johndoe, name=John Updated, email=john.updated@example.com, gender=Male, picture=http://example.com/john_updated.jpg)
+2025-02-10T01:02:57.712+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Creating new user: User(username=johndoe, name=John Doe, email=john.doe@example.com, gender=Male, picture=http://example.com/picture.jpg)
+2025-02-10T01:02:57.712+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Fetching user with username: johndoe
+2025-02-10T01:02:57.716+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Creating new user: User(username=johndoe, name=John Doe, email=john.doe@example.com, gender=Male, picture=http://example.com/picture.jpg)
+2025-02-10T01:02:57.717+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Creating new user: User(username=janedoe, name=Jane Doe, email=jane.doe@example.com, gender=Female, picture=http://example.com/jane.jpg)
+2025-02-10T01:02:57.721+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Creating new user: User(username=johndoe, name=John Doe, email=john.doe@example.com, gender=Male, picture=http://example.com/picture.jpg)
+2025-02-10T01:02:57.722+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Deleting user with username: johndoe
+2025-02-10T01:02:57.722+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Fetching user with username: johndoe
+2025-02-10T01:02:57.726+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Creating new user: User(username=johndoe, name=John Doe, email=john.doe@example.com, gender=Male, picture=http://example.com/picture.jpg)
+2025-02-10T01:02:57.727+05:30  INFO 9572 --- [    Test worker] c.o.usermanagement.service.UserService   : Updating user with username: ghost
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\vinay\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.10\90ed94ac044ea8953b224304c762316e91fd6b31\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
