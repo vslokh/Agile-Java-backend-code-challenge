@@ -149,3 +149,30 @@
 ```
 
 ---
+
+## Design Principles Mapping
+
+### SOLID Principles Applied:
+
+1. **Single Responsibility Principle (SRP)**
+    - The `UserService` class handles only business logic related to users.
+    - The `UserController` class is responsible for managing API endpoints and request handling.
+    - Separate `commands` and `queries` are created for better separation of responsibilities (CQRS pattern).
+
+2. **Open-Closed Principle (OCP)**
+    - The design allows for easy extension of new features without modifying existing classes.
+    - New functionalities like additional user attributes or different persistence mechanisms can be added without modifying `UserService`.
+
+3. **Liskov Substitution Principle (LSP)**
+    - The `User` model follows standard Java object principles and can be substituted in different implementations.
+    - Any new type of user (e.g., `AdminUser`) can be implemented without breaking the existing logic.
+
+4. **Interface Segregation Principle (ISP)**
+    - `UserService` is focused on user operations, ensuring that no unnecessary methods are forced upon the service.
+    - CQRS pattern ensures command and query responsibilities are properly divided.
+
+5. **Dependency Inversion Principle (DIP)**
+    - `UserController` depends on `UserService`, which follows an abstraction principle.
+    - Future changes in user persistence (e.g., moving to a database) can be done without modifying the controller.
+
+---
